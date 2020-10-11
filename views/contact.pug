@@ -1,0 +1,21 @@
+extends includes/index.pug
+block content
+    div(id='containerBack')
+        div(id='containerContact')
+            form(action='/contact' method='post')
+                ul
+                    li
+                        h3 CONTACT
+                    li
+                        h4 Demande de renseignements 
+                        p Contactez-nous pour en savoir plus sur les formations proposées
+                    li
+                        input(type='text' name='prenom' placeholder='Prénom*')
+                    li
+                        input(type='text' name='nom' placeholder='Nom*')
+                    li
+                        input(type='text' name='email' placeholder='Email*')
+                    li 
+                        input(type='textarea' name='message' placeholder='Message*')
+                    li
+                        button(type='submit') Valider

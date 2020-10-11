@@ -1,0 +1,222 @@
+* { padding : 0; margin : 0; }
+html{
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondBack.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    cursor: default;
+    font-family: "arial narrow", sans-serif!important;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    background-color:rgba(255,255,255,0.9);
+}
+#containerHead{
+    display: flex;
+    flex-direction: column;
+}
+#topHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #FFF2CA;
+    font-size: 15px;
+}
+#logo img{
+    max-width: 300px;
+    margin-left: -15px;
+    opacity: 1;
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 2%;
+}
+#contact li{
+    width: 100px;
+}
+#contact img{
+    max-width: 20px;
+}
+#contact a{
+    font-size: 12px;
+    width: 100%;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rechercher{
+    border: none!important;
+}
+#newsletter{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#newsletterT{
+    margin-right: 10px;
+    margin-top: 18px;
+}
+#newsletterI{
+    display: flex;
+    flex-direction: row;
+}
+#newsletter input{
+    width: 200px;
+}
+#reseau{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#reseau p{
+    position: absolute;
+    top: 20px;
+    right:30px;
+}
+#reseau a{
+    margin-right: 20px;
+}
+#reseau img{
+    width: 30px;
+    height: 30px;
+}
+#botHead{
+    margin-left: 260px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#botHead li{
+    list-style-type: none;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 100%;
+}
+.noborder{
+    border-bottom: none!important;
+}
+#botHead a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(153,17,3);
+}
+#botHead li:hover, #botHead li:hover a{
+    transition-duration: 0.5s;
+    cursor:pointer;
+    background-color: rgb(153,17,3); 
+    color: #FFF2CA;
+}
+#containerMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#containerBack{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+}
+#containerRecherche{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    width: 260px;
+    height: 100%;
+    min-width: 260px;
+    color: black;
+}
+#containerRecherche li{
+    margin: 0 auto;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+#containerRecherche li:hover a{
+    color: #FFF2CA;
+    background-color: rgb(107,79,153);;
+}
+#containerRecherche a{
+    width: 85%;
+    height: 50px;
+    background-color: rgb(215,208,239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(153,17,3); 
+}
+#containerRecherche p{
+    text-align: center;
+    font-size: 15px;
+}
+#search{
+    display: flex;
+    align-items: center;
+}
+#search h4{
+    width: 100%;
+    text-align: center;
+    color: rgb(153,17,3);
+}
+#researchRight{
+    position: fixed;
+    top: 60%;
+    right: 0;
+    width: 90px;
+    height: 260px;
+}
+#researchRight ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+#researchRight li{
+    width: 100%;
+    height: 25%;
+}
+#researchRight a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 93%;
+    width: 80px;
+    background-color: rgb(215,208,239);
+    color: rgb(153,17,3);
+}
+#researchRight p{
+    text-align: center;
+}
+#researchRight li:hover a{
+    background-color: rgb(107,79,153);
+    color: #FFF2CA;
+    cursor:pointer;
+}
