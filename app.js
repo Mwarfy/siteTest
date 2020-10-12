@@ -42,6 +42,6 @@ app.use(function(req, res, next){
     res.redirect('/accueil')
 })
 
-app.listen(3000, function(){
-    console.log('Running on http://localhost:3000/')
+app.listen(80, function(){
+    console.log('Running on 51.210.103.168')
 })

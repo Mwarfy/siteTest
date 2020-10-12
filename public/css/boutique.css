@@ -1,0 +1,8 @@
+#containerBoutique{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#containerImage{
+    width: 100%;
+}

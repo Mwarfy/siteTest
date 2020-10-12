@@ -1,0 +1,23 @@
+#containerAccueil{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    color:rgb(111, 168, 220);
+}
+#carrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+#carrousel ul{
+    list-style-type: none;
+}
+#carrousel img{
+    width: 400px;
+    height: 250px;
+}
