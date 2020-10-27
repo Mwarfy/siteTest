@@ -1,8 +1,16 @@
 #containerBoutique{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    padding: 0 30px;
 }
-#containerImage{
+#containerBoutiqueImage{
+    display: flex;
+    flex-wrap: wrap;
+}
+#containerBoutique img{
     width: 100%;
+    height: 300px;
+}
+#containerBoutique .row{
+    margin-bottom: 20px;
 }

@@ -4,50 +4,166 @@ block rightBlock
 block content
     div(id='containerBack')
         div(id='containerBoutique')
-            h1=title
-            ul(id='containerImage')
-                li
-                    a(href="")
-                        img(src="img/boutique/BaumeAlambinier.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/BaumeChat.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/BaumeHydratant.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/BaumeSeve.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/confitOignon.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/confitOignonMiel.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/confitureBrugnon.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/confiturePomme.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/confiturePommeSafran.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/daucusCarota.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/herbeAromatique.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/huilePrecieuse.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/PommeConfiteSafran.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/safranMillesime.webp")
-                li
-                    a(href="")
-                        img(src="img/boutique/vinaigreSafrane.webp")
+            h2(class='text-dark') Boutique
+            div(id='containerBoutiqueImage')
+                div(class='row')
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/baumeChat.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Baume du Chat des Alpes
+                                p(class='card-text') 8€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/BaumeAlambinier.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Baume de l'Alambinier #[br] #[br]
+                                p(class='card-text') 3€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/BaumeSeve.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Baume de Sève de Rocher pour la peau
+                                p(class='card-text') 3€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class='row')
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/daucusCarota.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Condiment: Daucus Carota
+                                p(class='card-text') 5€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/vinaigreSafrane.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Vinaigre Safrané #[br] #[br]
+                                p(class='card-text') 18€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/safranMillesime.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Safran Millésimé #[br] #[br]
+                                p(class='card-text') 108€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class='row')
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/confitureBrugnon.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Confiture de Brugnon Safranée
+                                p(class='card-text') 10€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/confitOignon.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Confit d'oignon Safrané, au Miel d'Acacia
+                                p(class='card-text') 10€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/confitOignonMiel.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Confit d'oignon Safrané, au Miel toutes Fleurs
+                                p(class='card-text') 10€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class='row')
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/confiturePomme.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Confiture de Pommes, Coings, et Safran
+                                p(class='card-text') 12€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/confiturePommeSafran.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Confiture de Pommes et Safran
+                                p(class='card-text') 12€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/BaumeHydratant.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Baume Hydratant pour les Lèvres
+                                p(class='card-text') 3€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class='row')
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/herbeAromatique.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Mélange d'Herbes Aromatiques
+                                p(class='card-text') 8€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/accueil/carouselBot/gallery2.jpg" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Huile précieuse au Crocus de Safran
+                                p(class='card-text') 18€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class='col-md-4')
+                        div(class='card')
+                            img(src="img/boutique/PommeConfiteSafran.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Pommes Confites au Safran
+                                p(class='card-text') 9.99€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class='row')
+                    div(class="col-md-4")
+                        div(class='card')
+                            img(src="img/accueil/carouselBot/gallery4.jpg" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Sativusel #[br] #[br]
+                                p(class='card-text') 8€ - 12€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class="col-md-4")
+                        div(class='card')
+                            img(src="img/accueil/carouselBot/gallery1.jpg" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Parfum Crocus Safran #[br] #[br]
+                                p(class='card-text') 20€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                    div(class="col-md-4")
+                        div(class='card')
+                            img(src="img/accueil/carouselBot/gallery6.webp" class='card-img-top img-fluid rounded')
+                            div(class='card-body')
+                                h5('card-title') Infusion de Plantes Sauvages
+                                p(class='card-text') 12€
+                            div(class='card-body')
+                                a(href="#" class='card-link' data-toggle="modal" data-target="#staticBackdrop") En savoir plus
+                div(class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+                    div(class="modal-dialog modal-dialog-centered")
+                        div(class="modal-content")
+                            div(class="modal-header")
+                                h5(class="modal-title" id="staticBackdropLabel") Titre provisoire
+                                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                                    span(aria-hidden="true") &times;
+                            div(class="modal-body") Description provisoire
+                            div(class="modal-footer")
+                                button(type="button" class="btn btn-secondary" data-dismiss="modal") Fermer
+                a(href="/inscription" style='margin-top:40px') Lien Formulaire de pré-inscription Safranière du Val d'Arly

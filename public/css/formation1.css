@@ -1,0 +1,52 @@
+#containerFormation{
+    width: 100%;
+    height: 100%;
+    padding:  0 30px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(7, 99, 185);
+}
+#formationTop{
+    display: flex;
+    flex-direction: row;
+}
+#formationTop img{
+    width: 30%;
+}
+#containerFormation li{
+    margin-left:20px;
+    display: flex;
+    flex-direction: row;
+}
+#containerFormation h2, #containerFormation h3, #containerFormation h4{
+    margin-top: 30px;
+    color:black;
+}
+#containerFormation p, #containerFormation li{
+    margin-top: 20px;
+}
+#containerFormation li span{
+    margin-right: 5px;
+}
+#formationInfo{
+    color: black;
+}
+.oj-color{
+color: rgb(230, 145, 56);
+}
+.blue-color{
+    color: rgb(7, 55, 99);
+}
+.center{
+    text-align: center;
+}
+
+.nomargin{
+    margin:0!important;
+}
+table th, table td{
+    padding: 2px;
+    width: 12.5%;
+    border: 1px solid gray;
+    text-align: center;
+}

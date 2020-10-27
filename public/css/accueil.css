@@ -1,23 +1,55 @@
 #containerAccueil{
     width: 100%;
     height: 100%;
-    padding: 5px;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    color:rgb(111, 168, 220);
+    padding: 0 30px;
 }
-#carrousel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#carouselTop{
+    height: 400px;
+    margin-top: 50px;
+}
+#carouselTop img{
+    height: 400px;
+    overflow: hidden;
+}
+#blogCarousel{
+    margin-top: 50px;
+}
+#containerAccueil p{
+    color:rgb(7, 99, 185);
+    margin-top:20px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    filter: invert(100%);
+}
+#blogCarousel .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+}
+#blogCarousel .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 100%;
+    width: 15px;
+    height: 0;
+}
+#blogCarousel .carousel-indicators .active {
+    background: #707070;
+}
+#blogCarousel .row{
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#blogCarousel img{
+    max-width: 100%;
     width: 100%;
-    height: 300px;
+    height:300px;
 }
-#carrousel ul{
-    list-style-type: none;
+#blogCarousel .carousel-control-next,
+#blogCarousel .carousel-control-prev{
+    width: 30px;
 }
-#carrousel img{
-    width: 400px;
-    height: 250px;
+#card{
+    margin-top: 20px;
 }

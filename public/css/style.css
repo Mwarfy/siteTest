@@ -12,15 +12,23 @@ body{
     width: 100%;
     margin: 0;
     display: flex;
+    font-family: "market_fresh", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
     flex-direction: column;
     align-content: space-around;
 }
+.nav-link.active{
+    border-color: black black white!important;
+}
+.nav-link{
+    border-color: white white black!important;
+}
+p, ul{margin-bottom: 0!important;}
 @font-face {
-    font-weight: normal;
-    font-style: normal;
     font-family: "market_fresh";
-    src: local("font/market_fresh"),
-    format("truetype");
+    src: url("font/market_fresh/Market-Fresh.ttf");
 }
 #containerHead{
     display: flex;
@@ -28,33 +36,34 @@ body{
 }
 #topHead{
     display: flex;
+    height: 130px;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #FFF2CA;
+    background-color: rgb(255, 242, 202);
     font-size: 15px;
+}
+#logo{
+    display: flex;
 }
 #logo img{
     max-width: 300px;
-    margin-left: -15px;
-    opacity: 1;
+    margin-left: -25px;
 }
 #contact{
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    margin-left: 2%;
 }
 #contact li{
-    width: 100px;
-}
-#contact img{
-    max-width: 20px;
+    width: 150px;
 }
 #contact a{
-    font-size: 12px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
     width: 100%;
-    color: black;
     list-style-type: none;
     text-decoration: none;
     border-right: 1px solid gray;
@@ -66,14 +75,23 @@ body{
     border: none!important;
 }
 #newsletter{
-    margin-left: 5%;
+    margin-left: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+#newsletterP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
 #newsletterT{
-    margin-right: 10px;
-    margin-top: 18px;
+    display:flex;
+    justify-content: center;
+    width: 115px;
+    height: 0px;
 }
 #newsletterI{
     display: flex;
@@ -82,23 +100,26 @@ body{
 #newsletter input{
     width: 200px;
 }
+.btn-outline-success{
+    color: rgb(153,17,3)!important;
+    border-color:rgb(153,17,3) !important;
+}
+.btn-outline-success:hover{
+    background-color: rgb(153,17,3)!important;
+    color:#FFF2CA!important;
+}
 #reseau{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#reseau p{
-    position: absolute;
-    top: 20px;
-    right:30px;
-}
 #reseau a{
     margin-right: 20px;
 }
 #reseau img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 #botHead{
     margin-left: 260px;
@@ -106,13 +127,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-bottom-color: black;
 }
-#botHead li{
-    list-style-type: none;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    width: 100%;
-    height: 100%;
+#bothead li{
+    width: 14.286%;
 }
 .noborder{
     border-bottom: none!important;
@@ -141,7 +159,9 @@ body{
 }
 #containerBack{
     height: 100%;
-    width: 70%;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    width: 72%;
     display: flex;
     background-size: cover;
 }
@@ -164,7 +184,7 @@ body{
 }
 #containerRecherche li:hover a{
     color: #FFF2CA;
-    background-color: rgb(107,79,153);;
+    background-color: rgb(107,79,153);
 }
 #containerRecherche a{
     width: 85%;
@@ -192,7 +212,7 @@ body{
 }
 #researchRight{
     position: fixed;
-    top: 50%;
+    bottom: 2px;
     right: 0;
     width: 85px;
     height: 330px;
@@ -211,6 +231,7 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    padding:5px;
     height: 80px;
     width: 80px;
     background-color: rgb(215,208,239);
@@ -218,6 +239,8 @@ body{
 }
 #researchRight p{
     text-align: center;
+    width: 100%;
+    font-size: 14px;
 }
 #researchRight li:hover a{
     background-color: rgb(107,79,153);

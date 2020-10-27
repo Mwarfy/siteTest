@@ -2,12 +2,23 @@ html
     block head
         title Safranière du Val d'Arly
         link(rel="stylesheet" type="text/css" href="css/style.css")
-        link(rel="stylesheet", type="text/css" href="css/presentation.css")
         link(rel='stylesheet' type='text/css' href='css/accueil.css')
-        link(rel='stylesheet' type='text/css' href='css/foot.css')
+        link(rel="stylesheet" type="text/css" href="css/presentation.css")
+        link(rel='stylesheet' type='text/css' href='css/formation.css')
+        link(rel='stylesheet' type='text/css' href='css/formation1.css')
+        link(rel='stylesheet' type='text/css' href='css/coaching.css')
+        link(rel='stylesheet' type='text/css' href='css/questionnaire.css')
         link(rel='stylesheet' type='text/css' href='css/contact.css')
-        link(rel='stylesheet' type='text/css' href='css/formations.css')
-        link(rel='stylesheet' type='text/css' href=('css/coaching.css'))
+        link(rel='stylesheet' type='text/css' href='css/boutique.css')
+        link(rel='stylesheet' type='text/css' href='css/inscription.css')
+        link(rel='stylesheet' type='text/css' href='css/newsletter.css')
+        link(rel='stylesheet' type='text/css' href='css/blog.css')
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="css/jcarousel.css")
+        script(src="/javascripts/jquery.js")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")
     body
         div(id='containerHead')
             div(id='topHead')
@@ -15,73 +26,65 @@ html
                         img(src="img/accueil/logoSite.png", alt="Logo Safranière du Val d'Arly")
                     ul(id='contact')
                         li
-                            a(href='/contact' id='contact') 
-                                img(src="img/accueil/iconEmail.png", alt="safraniereduvaldarly@gmail.com")
-                                p CONTACT
+                            a(href='/contact' id='contact' class='text-dark' style='border-left: 1px solid gray;') 
+                                i(class='fa fa-envelope fa-lg')
+                                span CONTACT
                         li
-                            a(href='/Agenda' id='agenda')
-                                img(src='img/accueil/iconAgenda.png')
-                                p AGENDA
-                        li
-                            a(id='rechercher')
-                                img(src='img/accueil/iconSearch.png')
-                                p RECHERCHER
-                    div(id='newsletter')
-                        p(id='newsletterT') NEWSLETTER
-                        div
-                            p Restez au fait de notre actualité
+                            a(href='/Agenda' class='text-dark' id='agenda')
+                                i(class='fa fa-calendar fa-lg')
+                                span AGENDA
+                    div(id='newsletterP')
+                        form(action='/newsletter')
+                            button(class='btn btn-primary' type='submit') Newsletter
+                    //div(id='newsletter')
+                        p(id='newsletterT' class='text-dark') NEWSLETTER :
+                        div(style='width:400px;')
+                            p(class='text-dark') Restez au fait de notre actualité :
                             div(id='newsletterI')
-                                input(type="text" value='Email*')
-                                button OK
+                                form(class="form-inline my-3 my-lg-0")
+                                    input(class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email")
+                                    button(class="btn btn-outline-success my-2 my-sm-0" type="submit") OK
                     div(id='reseau')
-                        p CHAINES:
                         div
                             a(href="https://www.facebook.com/safraniere.duvaldarly.3")
-                                img(src="img/accueil/iconFacebook.png", alt="https://www.facebook.com/safraniere.duvaldarly.3")
-                            a(href='https://www.youtube.com/channel/UCgmdorGGzbFgzyE2A8k68dw')
-                                img(src='img/accueil/iconYoutube.png', alt='https://www.youtube.com/channel/UCgmdorGGzbFgzyE2A8k68dw')
-
-
-            ul(id='botHead')
-                li(id='accueil')
-                    a(href='/')
-                        p Accueil
-                li
-                    a(href='/presentation' id='Biographie')
-                        p Présentation
-                li
-                    a(href='/formations' id='formations')
-                        p Formations
-                li
-                    a(href='/coaching' id='coaching')
-                        p Coachings
-                li
-                    a(href='/boutique' id='boutique')
-                        p Boutique
-                li
-                    a(href='/questionnaire' id='questionnaire')
-                        p Questionnaires
-                li
-                    a(href='/blog' id='blog')
-                        p Blog
+                                span(class="fa-stack fa-2x")
+                                    i(class="fa fa-circle fa-stack-2x")
+                                    i(class="fa fa-facebook fa-stack-1x fa-inverse")
+            ul(class='nav nav-tabs' id='botHead')
+                li(class='nav-item')
+                    a(class='nav-link active' href='/' id='accueil') Accueil
+                li(class='nav-item')
+                    a(class='nav-link' href='/presentation' id='presentation') Présentation
+                li(class='nav-item')
+                    a(class='nav-link' href='/formation' id='formation') Formations
+                li(class='nav-item')
+                    a(class='nav-link' href='/coaching' id='coaching') Coachings
+                li(class='nav-item')
+                    a(class='nav-link' href='/boutique' id='boutique') Boutique
+                li(class='nav-item')
+                    a(class='nav-link' href='/questionnaire' id='questionnaire') Questionnaires
+                li(class='nav-item')
+                    a(class='nav-link' href='/blog' id='blog') Blog
         div(id='containerMain')
             block rightBlock
             block content
         div(id='researchRight')
             ul
                 li
-                    a(href="")
+                    a(href="https://us04web.zoom.us/j/2430711386?pwd=QWRJWnZlMU9xK01LcnRXRXVjNDdVdz09")
                         p Reunion en ligne
                 li
-                    a(href="")
+                    a(href="/boutique")
                         p Boutique
                 li
-                    a(href="")
-                        p Newsletters
+                    a(href="/newsletter")
+                        p Newsletter
                 li
-                    a(href="")
+                    a(href="/inscription")
                         p Inscription Formation Coaching
-        div(class='spaceNoneH' style='height: 30px;')
-        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+        script.
+            var title = !{JSON.stringify(title)}
+        if(title != 'accueil')
+            script(src='/javascripts/nav.js')
         script(src='/javascripts/script.js')
             

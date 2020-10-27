@@ -5,7 +5,7 @@
     padding-top: 15px;
     display: flex;
     flex-direction: row;
-    color:rgb(111, 168, 220);
+    color:rgb(7, 99, 185);
 }
 .italic{
     font-style: italic;
@@ -13,14 +13,12 @@
 .strong{
     font-weight: bold;
 }
-.margin-top-20{
+#containerBiographie p{
     margin-top: 20px;
 }
-.margin-top-10{
-    margin-top: 10px;
-}
-.margin-top-5{
-    margin-top: 5px;
+#containerBiographie h2, #containerBiographie h3, #containerBiographie h4{
+    margin-top: 30px;
+    color: black;
 }
 .margin-left{
     margin-left: 40px;
@@ -44,8 +42,29 @@
     flex-direction: column;
     margin-left: 20px;
 }
+#imgEtudes{
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+}
+#imgEtudes li{
+    margin-left: 10px!important;
+    padding: 0!important;
+    width: 25%;
+}
+#imgEtudes li:before{
+    content: ''!important;
+}
+#imgEtudes img{
+    width: 100%;
+    height: 100px;
+}
+#imgCo img{
+    height: 50px;
+}
 #containerPresentation ul{
-    list-style:none;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
